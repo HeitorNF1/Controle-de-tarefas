@@ -1,18 +1,21 @@
 package listas;
-
+import listas.ListaTarefa;
+import maps.MapsTarefas;
 public class Tarefas {
+
 
     private String descricao;
     private String nome;
-
     private String status;
 
+
+
     public Tarefas(String nome, String descricao, String status ) {
+
         this.nome = nome;
         this.descricao = descricao;
         this.status = status;
     }
-
     public String getDescricao() {
         return descricao;
     }
@@ -25,6 +28,6 @@ public class Tarefas {
 
     @Override
     public String toString() {
-        return "Nome: "+ nome + " Descricao: " + descricao + " Status: " + status + "\n";
+        return "\n" + "nome: "+ nome + " Descricao: " + descricao + " Status: " + status + "\n";
     }
 }
